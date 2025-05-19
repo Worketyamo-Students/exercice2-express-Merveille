@@ -62,8 +62,6 @@ const bookController = {
         const {nom,date} = req.body;
         const {id} = req.params;
 
-        //res.status(200).send('books')
-
             books.map((item) => {
                 if(item.id === parseInt(id)){
                     item.nom = nom;
